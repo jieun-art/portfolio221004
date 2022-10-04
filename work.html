@@ -1,0 +1,404 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Work</title>
+	<style>
+		
+
+	.nameBT {position: fixed; z-index: 10; height:15px;  padding: 7px; left: 50%; top: 10px; left: 2vw; opacity: 1; filter: invert(100%);}
+	.homeBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 6vw;transform: translateX(-190%);opacity: 1; filter: invert(100%);}
+	.workBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 4vw; transform: translateX(-105%);opacity: 1; filter: invert(100%)}
+	.cvBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 2vw; transform: translateX(0);opacity: 1; filter: invert(100%)}
+	p.bignumF{font-family: 'Cinzel', serif;}
+
+.nameBT:hover{
+	opacity: .5;
+}
+.homeBT:hover{
+	opacity: .5;
+}
+
+.workBT:hover{
+	opacity: .5;
+}
+
+.cvBT:hover{
+	opacity: .5;
+}
+		.BG {position: fixed; width: 100%; height: 100%;z-index: -10; top: 0px;
+		background: linear-gradient(to top, rgb(0, 0, 0, 0),rgba(255,255,255,0.4));}
+		
+		.workbody{
+			max-width: 1350px;
+			width: 100%;
+			height: 45px;
+			z-index:100;
+			margin: 0 auto;
+			position: fixed;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 0;
+		}
+		
+		.workbody01{
+			position: relative;
+			max-width: 960px;
+			height: 500px;
+			margin: 0 auto;
+			top: 25vh;
+			
+		}
+		
+		.title {
+    font-weight: 100;
+    font-family: 'Rix독립고딕_Pro Regular', sans-serif;
+}
+.title2 {
+    font-weight: 100;
+    font-family: 'Rix독립고딕_Pro Regular', sans-serif;
+}
+.title3 {
+    font-weight: 100;
+    font-family: 'Rix독립고딕_Pro Regular', sans-serif;
+}
+
+		.workfloat{
+			width: 30%;
+			height: 300px;
+			background-color: aquamarine;
+			float: left;
+			margin: 1.66%;
+			background: url("img/work01BG8.png");
+			background-size: auto 300px;
+			background-position: center;
+			/*filter: blur(2px);*/
+			text-align: center;
+			cursor: pointer;
+			font-size: 0;
+			
+		}
+		
+			
+		
+		.workfloat:hover{
+			
+			font-size: 16pt;
+			background-color:black;
+			background: url("img/work01BG9.png");
+			filter: alpha(opacity=50);
+			background-size: auto 300px;
+			background-position: center;
+			font-family: Pretendard;
+			color: white;
+		}
+		
+		.workfloat01{
+			width: 30%;
+			height: 300px;
+			background-color: aquamarine;
+			float: left;
+			margin: 1.66%;
+			background: url("img/work01BG121.png");
+			background-size: auto 340px;
+			background-position: center;
+			/*filter: blur(2px);*/
+			text-align: center;
+			vertical-align: middle;
+			cursor: pointer;
+			font-size: 0;
+			
+		}
+		.workfloat01:hover{
+			
+			font-size: 20pt;
+			background-color:black;
+			background: url("img/work01BG5.png");
+			filter: alpha(opacity=50);
+			background-size: auto 340px;
+			background-position: center;
+			font-family: Pretendard;
+			color: white;
+			
+			
+		}
+		
+
+		
+		
+		.workfloat02{
+			width: 30%;
+			height: 300px;
+			background-color: aquamarine;
+			float: left;
+			margin: 1.66%;
+			background: url("img/work02BG4.png");
+			background-size: auto 370px;
+			background-position: center;
+			/*filter: blur(2px);*/
+			text-align: center;
+			cursor: pointer;
+			font-size: 0;
+			
+		}
+		.workfloat02:hover{
+			
+			font-size: 20pt;
+			background-color:black;
+			background: url("img/work02BG.png");
+			filter: alpha(opacity=50);
+			background-size: auto 370px;
+			background-position: center;
+			font-family: Pretendard;
+			color: white;
+			
+			
+		}
+		
+		.workfloat03{
+			width: 30%;
+			height: 300px;
+			background-color: aquamarine;
+			float: left;
+			margin: 1.66%;
+			background: url("img/work03BG02.png");
+			background-size: auto 370px;
+			background-position: center;
+			/*filter: blur(2px);*/
+			text-align: center;
+			cursor: pointer;
+			font-size: 0;
+			
+		}
+		.workfloat03:hover{
+			
+			font-size: 20pt;
+			background-color:black;
+			background: url("img/work03BG01.png");
+			filter: alpha(opacity=50);
+			background-size: auto 370px;
+			background-position: center;
+			font-family: Pretendard;
+			color: white;
+			
+		}
+		
+		.workfloatBG{
+			display: none;
+			width: 70%;
+			height: 100px;
+			background-color: aquamarine;
+			float: left;
+			margin-left: 15%;
+			
+			background-size: auto 300px;
+			background-position: center;
+			/*filter: blur(2px);*/
+			text-align: center;
+			cursor: default;
+			font-size: 0;
+			
+		}
+			
+		@media (max-width: 500px){
+		.nameBT {position: fixed; z-index: 10; height:15px; left: 50%; top: 15px; left: 2vw;}
+		.homeBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 13vw;transform: translateX(-190%);}
+		.workBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 7vw; transform: translateX(-105%);}
+		.cvBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 1vw; transform: translateX(0);}
+		p.bignumF{font-family: 'Cinzel', serif;}
+		
+		.workbody01{
+			position: relative;
+			max-width: 960px;
+			height: 500px;
+			margin: 0 auto;
+			top: 50px;
+			
+		}
+			
+			.workfloat01{
+			width: 80%;
+			height: 350px;
+			background-color: aquamarine;
+			float: left;
+			margin-left: 10%;
+			
+			background-size: auto 350px;
+			background-position: center;
+			/*filter: blur(2px);*/
+			text-align: center;
+			cursor: pointer;
+			font-size: 0;
+			margin-bottom: 5px;
+		}
+			
+		.workfloat01:hover{
+			
+			font-size: 22pt;
+			background-color:black;
+			background: url("img/work01BG7.png");
+			filter: alpha(opacity=50);
+			background-size: auto 350px;
+			background-position: center;
+			font-family: Pretendard;
+			color: white;
+		}
+			
+		.workfloat02{
+			width: 80%;
+			height: 350px;
+			background-color: aquamarine;
+			float: left;
+			margin-left: 10%;
+			
+			background-size: auto 350px;
+			background-position: center;
+			/*filter: blur(2px);*/
+			text-align: center;
+			cursor: pointer;
+			font-size: 0;
+			margin-bottom: 5px;
+		}
+			
+		.workfloat02:hover{
+			
+			font-size: 22pt;
+			background-color:black;
+			background: url("img/work02BG.png");
+			filter: alpha(opacity=50);
+			background-size: auto 350px;
+			background-position: center;
+			font-family: Pretendard;
+			color: white;
+		}
+			.workfloat03{
+			width: 80%;
+			height: 350px;
+			background-color: aquamarine;
+			float: left;
+			margin-left: 10%;
+			
+			background-size: auto 350px;
+			background-position: center;
+			/*filter: blur(2px);*/
+			text-align: center;
+			cursor: pointer;
+			font-size: 0;
+			margin-bottom: 5px;
+		}
+			
+		.workfloat03:hover{
+			
+			font-size: 22pt;
+			background-color:black;
+			background: url("img/work03BG01.png");
+			filter: alpha(opacity=50);
+			background-size: auto 350px;
+			background-position: center;
+			font-family: Pretendard;
+			color: white;
+		}
+			
+			
+			.workfloat{
+			width: 80%;
+			height: 350px;
+			background-color: aquamarine;
+			float: left;
+			margin-left: 10%;
+			
+			background-size: auto 350px;
+			background-position: center;
+			/*filter: blur(2px);*/
+			text-align: center;
+			cursor: pointer;
+			font-size: 0;
+			margin-bottom: 5px;
+		}
+			
+		.workfloat:hover{
+			
+			font-size: 16pt;
+			background-color:black;
+			background: url("img/work01BG9.png");
+			filter: alpha(opacity=50);
+			background-size: auto 350px;
+			background-position: center;
+			font-family: Pretendard;
+			color: white;
+		}
+			
+		.workfloatBG{
+			display: block;
+			width: 70%;
+			height: 100px;
+			background-color: aquamarine;
+			float: left;
+			margin-left: 15%;
+			
+			background-size: auto 300px;
+			background-position: center;
+			/*filter: blur(2px);*/
+			text-align: center;
+			cursor: pointer;
+			font-size: 0;
+			opacity: 0;
+		}
+	}
+		
+	</style>
+</head>
+
+<body>
+	<div class="workbody">
+	<div>
+		<a href="index.html">
+		<img src="./img/name.png" class="nameBT" >
+		</a>
+	</div>
+	<div>
+		<a href="index.html">
+		<img src="./img/homeBT.png" class="homeBT">
+		</a>
+	</div>
+	<div>
+		<a href="work.html">
+		<img src="./img/workBT.png" class="workBT">
+		</a>
+	</div>	
+	<div>
+		<a href="cv.html">
+		<img src="./img/resumeBT.png" class="cvBT">
+		</a>
+	</div>
+	<div class="BG" >
+		
+	</div>
+	</div>
+	<!-- 밑에 버튼들 -->
+<div class="workbody01">
+	<div>
+		<div class="workfloat01" onclick="location.href='work01.html';">
+			<!--img src="img/work02BG.png" styl="width: 100%, height: auto;"-->
+			<h2 class="title" style="transform: translateY(80px);">집밖은<br>위험해 </h2>
+		</div>
+		
+	</div>
+	<div>
+	<div class="workfloat02" onclick="location.href='work02.html';">
+		<h2 class="title" style="transform: translateY(80px);">PICOVID<br>2037</h2>
+	</div></div>
+	<div>
+	<div class="workfloat03" onclick="location.href='work03.html';">
+		<h2 class="title" style="transform: translateY(80px);">SPEAK 
+			<br>YOUR MIND </h2>
+	</div>
+		</div>
+	<div class="workfloatBG">
+		<h2 class="title"> </h2>
+	</div>
+	
+</div>
+
+</body>
+</html>

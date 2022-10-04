@@ -1,0 +1,653 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css" />
+<title>김지은_포트폴리오</title>
+<style>
+/* //////////////////////////////// */
+		
+html {
+}
+body {
+    background-color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    -webkit-user-drag: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* /////// 위 버튼 //////////////// */
+		
+.nameBT {
+    position: fixed;
+    z-index: 10;
+    height: 15px;
+    left: 50%;
+    top: 10px;
+    left: 2vw;
+    opacity: 1;
+    filter: invert(100%);
+    padding: 7px;
+}
+.homeBT {
+    position: fixed;
+    z-index: 10;
+    height: 15px;
+    padding: 7px;
+    top: 10px;
+    right: 6vw;
+    transform: translateX(-190%);
+    opacity: 1;
+    filter: invert(100%)
+}
+.workBT {
+    position: fixed;
+    z-index: 10;
+    height: 15px;
+    padding: 7px;
+    top: 10px;
+    right: 4vw;
+    transform: translateX(-105%);
+    opacity: 1;
+    filter: invert(100%)
+}
+.cvBT {
+    position: fixed;
+    z-index: 10;
+    height: 15px;
+    padding: 7px;
+    top: 10px;
+    right: 2vw;
+    transform: translateX(0);
+    opacity: 1;
+    filter: invert(100%)
+}
+p.bignumF {
+    font-family: 'Cinzel', serif;
+}
+.nameBT:hover {
+    filter: invert(00%);
+}
+.homeBT:hover {
+    filter: invert(00%);
+}
+.workBT:hover {
+    filter: invert(00%);
+}
+.cvBT:hover {
+    filter: invert(00%);
+}
+/* //////////////////////////////// */
+		
+.upBT {
+    background: linear-gradient(to top, rgb(255, 255, 255, 0.5), rgba(255,255,255,0.5));
+    max-width: 1350px;
+    width: 100%;
+    height: 45px;
+    z-index: 100;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+.me {
+    position: absolute;
+    max-width: 1350px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 1px);
+    z-index: 10;
+}
+/* /////폰트/////////////////////////// */
+		/* /////폰트/////////////////////////// */
+		/* /////폰트/////////////////////////// */
+		
+.textbox {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 0;
+    line-height: 2;
+    text-align: left;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    transform: translate(-20%, -50%);
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+}
+.section .slidelist .textbox h2 {
+    font-size: 60px;
+    weight: 1000;
+    line-height: 1.2;
+    color: #fff;
+    transform: translateY(30px);
+    z-index: 50;
+    transition: all .15s
+}
+.section .slidelist .textbox p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .5s;
+}
+.textbox h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+.section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .4s;
+}
+.section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .4s;
+}
+.section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .textbox p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .4s;
+}
+.title {
+    font-weight: 100;
+    font-family: 'Rix독립고딕_Pro Regular', sans-serif;
+}
+.title2 {
+    font-weight: 100;
+    font-family: 'Rix독립고딕_Pro Regular', sans-serif;
+}
+.title3 {
+    font-weight: 100;
+    font-family: 'Rix독립고딕_Pro Regular', sans-serif;
+}
+.title:hover {
+    display: block;
+    background-color: #6DB4FF;
+    cursor: pointer;
+}
+.title2:hover {
+    display: block;
+    background-color: #ff8b72;
+    cursor: pointer;
+}
+.title3:hover {
+    display: block;
+    background-color: #8ec6e6;
+    cursor: pointer;
+}
+/* ////// 큰 숫자 ////////////////////////// */
+		
+.bignumF {
+    font-size: 850px;
+    position: fixed;
+    font-style: oblique;
+    opacity: 0.7;
+    top: 20.8%;
+    transform: translate(-50%, -48%);
+    letter-spacing: -70px;
+}
+.bignumF {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(255, 255, 255, 1), white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding : 50vh;
+    pointer-events: none;
+}
+/* /////슬라이드 관련/////////////////////////// */
+		/* /////슬라이드 관련/////////////////////////// */
+		/* /////슬라이드 관련/////////////////////////// */
+		
+.section input[id*="slide"] {
+    display: none;
+}
+.section > li {
+    display: none;
+}
+.slide-control > div {
+    display: none;
+}
+.section {
+    font-family: '-윤고딕320';
+    background-color: white;
+}
+.section .slidewrap {
+    max-width: 100%;
+    margin: 0 auto;
+    max-width: 1350px;
+}
+.section .slidelist {
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+}
+.section .slidelist > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    transition: all .5s;
+}
+.section .slidelist > li > a {
+    display: block;
+    position: relative;
+}
+.section .slidelist > li > a img {
+    width: 100%;
+}
+/* label 머지? */
+	/* label 머지? */
+	/* label 머지? */
+	/* label 머지? */
+.section .slidelist label {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+}
+.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {
+    transform: translateX(-0%);
+}
+.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {
+    transform: translateX(-100%);
+}
+.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {
+    transform: translateX(-200%);
+}
+/* 슬라이드 배경 */
+	/* 슬라이드 배경 */
+	/* 슬라이드 배경 */
+.slideimg1 {
+    transform: translateY(0px);
+    background-image: url('img/work01BG5.png');
+    background-size: 100%;
+}
+.slideimg1:hover {
+    background-image: url('img/work01BG121.png');
+}
+.slideimg2 {
+    transform: translateY(0px);
+    background-image: url('img/work02BG.png');
+    background-size: 100%;
+}
+.slideimg2:hover {
+    background-image: url('img/work02BG4.png');
+}
+.slideimg3 {
+    transform: translateY(0px);
+    background-image: url('img/work03BG01.png');
+    background-size: 100%;
+}
+.slideimg3:hover {
+    background-image: url('img/work03BG02.png');
+}
+/* 좌,우 슬라이드 버튼 */
+.position {
+}
+.slide-control {
+    position: fixed;
+    max-width: 1350px;
+    width: 100%;
+    z-index: 50;
+    top: 90vh;
+}
+.slide-control > div {
+    display: none;
+}
+.section .left {
+    left: -20px;
+    background: url('./img/left.png') center center / 80% no-repeat;
+    opacity: 1;
+    filter: invert(40%);
+}
+.section .right {
+    right: -20px;
+    background: url('./img/right.png') center center / 80% no-repeat;
+    opacity: 1;
+    filter: invert(40%);
+}
+.left:hover {
+    opacity: 1;
+    filter: invert(100%);
+}
+.right:hover {
+    opacity: 1;
+    filter: invert(100%);
+}
+.section input[id="slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {
+    display: block;
+}
+.section input[id="slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {
+    display: block;
+}
+.section input[id="slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {
+    display: block;
+}
+/* 슬라이드 끝 */
+		/* 슬라이드 끝 */
+			/* 슬라이드 끝 */
+	
+.float3 {
+    width: 33.33%;
+    height: 70%;
+    background-color: white;
+    float: left;
+    background-size: auto 500px;
+    background-position: center;
+    /*filter: blur(2px);*/
+    text-align: center;
+    font-size: 0;
+    transform: translateY(-1%);
+}
+.float2 {
+    width: 66.66%;
+    height: 70%;
+    background-color: white;
+    float: left;
+    background-size: auto 500px;
+    background-position: center;
+    /*filter: blur(2px);*/
+    text-align: center;
+    font-size: 0;
+    transform: translateY(-1%);
+}
+.float1 {
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    float: left;
+    background-size: auto 500px;
+    background-position: center;
+    /*filter: blur(2px);*/
+    text-align: center;
+    font-size: 0;
+    transform: translateY(-1%);
+}
+	
+.float4 {
+    width: 25%;
+    height: 70%;
+    background-color: white;
+    float: left;
+    background-size: auto 500px;
+    background-position: center;
+    /*filter: blur(2px);*/
+    text-align: center;
+    font-size: 0;
+    transform: translateY(-1%);
+}
+	
+#myBtn {
+ display: none;
+  position: fixed; /* Fixed/sticky position */
+  bottom: -80vh; /* Place the button at the bottom of the page */
+  right: 0; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-top-left-radius: 30px; /* Rounded corners */
+  border-bottom-left-radius: 30px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.w18BT{
+		position: fixed;
+		transform: translate(78%,-510%);
+		width: 16%;
+		background-color: white;
+		padding: 10px;
+		border-radius: 10px;
+		box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+	z-index: 20;
+	}
+	
+</style>
+</head>
+
+<body>
+<div class="frame"> <img src="./img/title.png" class="me"> </div>
+
+<!-- /////// 위 버튼 ////////////////-->
+
+<div class="upBT">
+  <div class="frame">
+    <div> <a href="index.html"> <img src="./img/name.png" class="nameBT" > </a> </div>
+    <div> <a href="index.html"> <img src="./img/homeBT.png" class="homeBT"> </a> </div>
+    <div> <a href="work.html"> <img src="./img/workBT.png" class="workBT"> </a> </div>
+    <div> <a href="cv.html" > <img src="./img/resumeBT.png" class="cvBT"> </a> </div>
+  </div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</div>
+<!-- upBT --> 
+
+<!-- /////// 슬라이드 시작  ////////////////-->
+
+<div class="position">
+  <div class="section">
+    <input type="radio" name="slide" id="slide01" checked>
+    <input type="radio" name="slide" id="slide02">
+    <input type="radio" name="slide" id="slide03">
+    <li>
+      <label for="slide01"></label>
+    </li>
+    <li>
+      <label for="slide02"></label>
+    </li>
+    <li>
+      <label for="slide03"></label>
+    </li>
+    <div class="slidewrap">
+      <ul class="slidelist">
+        
+        <!--//////////////111111111111111/////////////////--> 
+        <!--//////////////111111111111111/////////////////--> 
+        <!--//////////////111111111111111/////////////////-->
+        <li class="slideitem"> <a style="z-index: 10;"> <img src="./img/title.png" style="opacity: 0;"> </a> 
+          
+          <!-- 글 시작 -->
+          <div>
+            <div class="slideimg1" >
+              <div class="textbox">
+                <p class="textup" style="position: absolute; transform: translateY(-1000%);"> 프로젝트 규모 ㅣ 3인 </p>
+                <h2 class="title" style="transform: translateY(0)"
+							onclick="location.href='work02.html';" > 집밖은 위험해 </h2>
+                <p>전략, 모바일 게임</p>
+                <p class="textdown" style="position: absolute; transform: translateY(900%);">김지은 ㅣ 아트 팀장 </p>
+              </div>
+              <img src="./img/work01BG121.png" onclick="location.href='work01-03.html';" style="width: 100%; cursor: pointer; opacity: 0;"> </div>
+          </div>
+          <!-- 글 끝 --> 
+          
+          <a> <img src="./img/work01/w11.png" style="width: 100%;"> </a>
+          <div style="text-align: center">
+            <iframe width="63.8%" height="484px" src="https://www.youtube.com/embed/tVoTIiA1478" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <img src="./img/work01/w13.png" style="width: 100%;"> 
+			<a> <img src="./img/work01/w1block.png" style="width: 80%; opacity: 0;"> </a> 
+			<a href="https://drive.google.com/file/d/16ZaB7rveSAbO35cwDBD5Ugij_Hv8KYZx/view"><img src="./img/work01/w14.png"  style="width: 100%;"></a> 
+			<a> <img src="./img/work01/w1block.png" style="width: 80%; opacity: 0;"> </a> 
+			<a> <img src="./img/work01/w1n2.png" style="width: 100%;"> </a> <a> <img src="./img/work01/w1block.png" style="width: 100%; opacity: 0;"></a> <a><img src="./img/work01/w1block.png" style="width: 100%; opacity: 0;"></a> 
+			<a><img src="./img/work01/w1block.png" style="width: 100%; opacity: 0;"> </a>
+          <div class="float3"> <img src="./img/work01/movie_0081_3.gif" style="width: 100%;"> </div>
+          <div class="float3"> <img src="./img/work01/movie_0082_3.gif" style="width: 100%; "> </div>
+          <div class="float3"> <img src="./img/work01/w1n3.png" style="width: 100%;"> </div>
+          <div class="float3"> <img src="./img/work01/w1n4.png" style="width: 100%; "> </div>
+          <div class="float2"> <img src="./img/work01/movie_009_3.gif" style="width: 100%;"> </div>
+          <div class="float1"> <img src="./img/work01/w1n5.png" style="width: 100%; z-index: 10; transform: translateY(-2%)"></div>
+          
+		  <div class="float1"> <img src="./img/work01/w1n6-1.gif" style="width: 100%; z-index: 10;transform: translateY(-2%)"></div>
+			<div class="float1"> <img src="./img/work01/w1n7.png" style="width: 100%; z-index: 10;transform: translateY(-4%)"></div>
+			<div class="float1"> <img src="./img/work01/w1block.png" style="width: 100%; z-index: 10;"></div>
+			<div class="float1"> <img src="./img/work01/w1block.png" style="width: 100%; z-index: 10;"></div>
+			<div class="float1"> <img src="./img/work01/w1block.png" style="width: 100%; z-index: 10;"></div>
+			<div class="float1"> <img src="./img/work01/w1n10.png" style="width: 100%; z-index: 10;">
+			<div class="w18BT">
+		<a href="https://link.tumblbug.com/xy8PcPcTosb"><img src="./img/work01/w18BT.png"  style="width: 100%;"></a></div>
+			</div>
+			
+			<div class="float1"> <img src="./img/work01/w1e.png" style="width: 100%;"></div>
+			<div class="float1"> <img src="./img/work01/w1block.png" style="width: 50%; z-index: 10;"></div>
+        </li>
+        
+        <!--//////////////2222222222222/////////////////--> 
+        <!--//////////////2222222222222/////////////////--> 
+        <!--//////////////2222222222222/////////////////-->
+        <li class="slideitem"> <a style="z-index: 10;"> <img src="./img/title.png" style="opacity: 0;"> </a> <!-- 글 시작 -->
+          <div>
+            <div class="slideimg2" >
+              <div class="textbox">
+                <p class="textup" style="position: absolute; transform: translateY(-1000%);"> 프로젝트 규모 ㅣ 4인 </p>
+                <h2 class="title2" style="transform: translateY(0)"
+							onclick="location.href='work02.html';" > PICOVID 2037 </h2>
+                <p>미디어 인터렉션 전시</p>
+                <p class="textdown" style="position: absolute; transform: translateY(900%);">이화여자대학교 ㅣ 졸업 전시 </p>
+              </div>
+              <img src="./img/work01BG121.png" onclick="location.href='work02.html';" style="width: 100%; cursor: pointer; opacity: 0;"> </div>
+          </div>
+          <!-- 글 끝 --> 
+          <a> <img src="./img/work02/w20.png" style="width: 100%;"> </a>
+          <div style="width: 71.5%; margin: 0 auto;"><img src="./img/work02/w21.png" style="width: 100%;"> </div>
+          <div style="text-align: center">
+            <iframe width="71.5%" height="580px" src="https://www.youtube.com/embed/ojAbDagMCNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div style="width: 71.5%; margin: 0 auto;"><img src="./img/work02/w22.png" style="width: 100%;"> </div>
+          <div style="width: 71.5%; margin: 0 auto;"><img src="./img/work02/w23.png" style="width: 100%;"> </div>
+        </li>
+        
+        <!--//////////////3333333333333/////////////////--> 
+        <!--//////////////3333333333333/////////////////--> 
+        <!--//////////////3333333333333/////////////////-->
+        <li class="slideitem"> <a style="z-index: 10;"> <img src="./img/title.png" style="opacity: 0;"> </a><!-- 글 시작 -->
+          <div>
+            <div class="slideimg3" >
+              <div class="textbox">
+                <p class="textup" style="position: absolute; transform: translateY(-1000%);"> 프로젝트 규모 ㅣ 1인 </p>
+                <h2 class="title3" style="transform: translateY(0)"
+							onclick="location.href='work02.html';" > SPEAK YOUR MIND </h2>
+                <p>산세리프 폰트 제작 / 컨셉북 제작</p>
+                <p class="textdown" style="position: absolute; transform: translateY(900%);">개인 프로젝트 | 폰트 제작, 폰트 활용 </p>
+              </div>
+              <img src="./img/work03BG01.png" onclick="location.href='work03.html';" style="width: 100%; cursor: pointer; opacity: 0;"> </div>
+          </div>
+          <!-- 글 끝 --> 
+		  <a> <img src="./img/work03/w31.png" style="width: 100%;"> </a>
+			<a> <img src="./img/work03/w32.png" style="width: 100%;"> </a>
+			<div style="max-width: 70%; margin: 0 auto;">
+			<a> <img src="./img/work03/w32.1.png" style="width: 100%; filter: invert(100)"> </a>
+			</div>
+			<a> <img src="./img/work01/w1block.png" style="width: 100%;"> </a>
+			<a> <img src="./img/work01/w1block.png" style="width: 100%;"> </a>
+			<a> <img src="./img/work01/w1block.png" style="width: 100%;"> </a>
+			<a> <img src="./img/work01/w1block.png" style="width: 100%;"> </a>
+			<a> <img src="./img/work03/w33.png" style="width: 100%;"> </a>
+			<a> <img src="./img/work03/w34.png" style="width: 100%;"> </a>
+			<a> <img src="./img/work03/w35.png" style="width: 100%;"> </a>
+			<a> <img src="./img/work01/w1block.png" style="width: 50%;"> </a>
+			<a> <img src="./img/work01/w1e.png" style="width: 100%;"> </a>
+		  
+		  </li>
+        
+        <!-- 좌,우 슬라이드 버튼 -->
+        <div class="slide-control">
+          <div>
+            <label for="slide03" class="left" onclick="colorChangeFour()"></label>
+            <label for="slide02" class="right" onclick="colorChangeTwo()"></label>
+          </div>
+          <div>
+            <label for="slide01" class="left" onclick="colorChangeOne()"></label>
+            <label for="slide03" class="right" onclick="colorChangeThree()"></label>
+          </div>
+          <div>
+            <label for="slide02" class="left" onclick="colorChangeTwo()"></label>
+            <label for="slide01" class="right" onclick="colorChangeFour()"></label>
+          </div>
+        </div>
+        <!-- 좌,우 슬라이드 버튼 -->
+        
+      </ul>
+      <!-- slidelist --> 
+    </div>
+    <!-- slidewrap --> 
+  </div>
+  <!-- section --> 
+</div>
+</body>
+<script type="text/javascript">
+    window.onload=function(){
+     colorChangeOne();
+    }
+
+    function colorChangeOne(){
+    var section = document.getElementsByClassName('section');
+    section[0].style.backgroundColor = 'white';
+    }
+
+    function colorChangeTwo(){
+    var section = document.getElementsByClassName('section');
+    section[0].style.backgroundColor = 'black';
+    }
+
+    function colorChangeThree(){
+    var section = document.getElementsByClassName('section');
+    section[0].style.backgroundColor = 'white';
+    }
+		
+	function colorChangeFour(){
+    var section = document.getElementsByClassName('section');
+    section[0].style.backgroundColor = 'white';
+    }
+		
+  	</script>
+	<script>
+	
+		// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 00; // For Safari
+  document.documentElement.scrollTop = 650; // For Chrome, Firefox, IE and Opera
+}
+	
+	</script>
+</html>

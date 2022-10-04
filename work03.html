@@ -1,0 +1,573 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;900&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;900&display=swap" rel="stylesheet">
+
+<title>work01</title>
+		
+<style>
+	
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+	html, body {
+	
+	
+}
+	* {margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+	
+@font-face {
+  		font-family: 'speakyourmind';
+    	 src: local('speakyourmind'),
+         url('speakyourmind-Regular.woff2') format('woff2'), 
+         url('speakyourmind-Regular.woff') format('woff'),
+         url('speakyourmind-Regular.ttf') format('truetype'),
+         url('speakyourmind-Regular.eot') format('embedded-opentype');} 
+
+ 
+
+		html, body, h1, h2, h3, h4, h5, h6, li, p {font-family:'speakyourmind' !important;}
+	
+	@font-face{
+		font-family: 'sym';
+		src:url("img/font/speakyourmind-Regular.ttf");
+	}
+	
+	html, head, body{background-color: #424242; padding:0; margin:0; font-size: 90px;}
+	
+		.me{position:fixed; padding: 10px; top: 10px; left: 15px; opacity: 0.4;}
+
+		.main{position:fixed;  padding: 10px; top:31%;  left: 15px;}
+		.jieun{position:fixed;  padding: 10px; bottom: 20px; left: 15px;opacity: 0.4;}	
+		
+		.gray{color:#DBDBDB;}
+		.bold{font-weight: bold;}
+	
+	body{
+		background-color: white;
+		
+	}
+	
+	.floatwhite{
+		float: left;
+	}
+	
+	
+	img {
+    -webkit-user-drag: none;
+}
+	
+	input[type=text] {
+		width: 82%;
+		
+			   padding: 10px;
+			  box-sizing: border-box;
+			  border: none;
+			  background-color: #4862a2;
+			  color: white;
+			  font-size: 50px;
+			  font-family:  'speakyourmind';
+				padding-left: 30px;
+			}
+
+	.workbody{
+			background: linear-gradient(to top, rgb(0, 0, 0, 0),rgba(255,255,255,0.53));
+		
+			max-width: 1350px;
+			width: 100%;
+			height: 100px;
+			z-index:100;
+			margin: 0 auto;
+			position: fixed;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 0;
+		}
+	
+	.work{
+		max-width: 1350px;
+		margin:0 auto;
+	}
+	
+	.nameBT {position: fixed; z-index: 10; height:15px;  padding: 7px; left: 50%; top: 10px; left: 2vw; opacity: 1; filter: invert(100%);}
+	.homeBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 6vw;transform: translateX(-190%);opacity: 1; filter: invert(100%);}
+	.workBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 4vw; transform: translateX(-105%);opacity: 1; filter: invert(100%)}
+	.cvBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 2vw; transform: translateX(0);opacity: 1; filter: invert(100%)}
+	p.bignumF{font-family: 'Cinzel', serif;}
+
+.nameBT:hover{
+	opacity: 1;
+	filter: invert(30%) sepia(14%) saturate(1910%) hue-rotate(185deg) brightness(94%) contrast(90%);
+}
+.homeBT:hover{
+	opacity: 1;
+	filter: invert(30%) sepia(14%) saturate(1910%) hue-rotate(185deg) brightness(94%) contrast(90%);
+}
+
+.workBT:hover{
+	opacity: 1;
+	filter: invert(30%) sepia(14%) saturate(1910%) hue-rotate(185deg) brightness(94%) contrast(90%);
+}
+
+.cvBT:hover{
+	opacity: 1;
+	filter: invert(30%) sepia(14%) saturate(1910%) hue-rotate(185deg) brightness(94%) contrast(90%);
+}
+	
+h2{
+	font-family: 'sym' , 'Pretendard';
+	font-size: 10pt;
+	transform: rotate(-90deg);
+}	
+
+
+	
+	transform: translate(-49%,3500%);
+		
+	z-index: 50;
+	}
+	
+	.float3 {
+    width: 33.33%;
+    
+    background-color: white;
+    float: left;
+    background-size: auto 500px;
+    background-position: center;
+    /*filter: blur(2px);*/
+    text-align: center;
+    font-size: 0;
+    transform: translateY(-1%);
+		filter: invert(100%);
+}
+	/* 슬라이드 */
+	
+	.section input[id*="slide"] {display: none;}
+	.section > li {display:none;}
+
+	.section {
+    
+		
+		font-family: '-윤고딕320'; 
+		
+		background-color: white;
+		padding:0px;
+		
+		}		
+	.section .slidewrap {
+		max-width:100%;
+		margin:0 auto;
+		
+		}
+	.section .slidelist {
+		white-space:nowrap;
+		font-size:0;
+		overflow:hidden;
+		position:relative;
+		border-radius: 10px;
+		}
+	
+	.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all 0s;}
+	.section .slidelist > li > a {display:block;position:relative;}
+	.section .slidelist > li > a img {width:100%;}
+	.section .slidelist label {position:absolute;z-index:10;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+
+	.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-0%); }
+	.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	.section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}
+	.section input[id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-400%);}
+	.section input[id="slide06"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-500%);}
+	.section input[id="slide07"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-600%);}
+	.section input[id="slide08"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-700%);}
+	.section input[id="slide09"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-800%);}
+	.section input[id="slide10"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-900%);}
+	.section input[id="slide11"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1000%);}
+	.section input[id="slide12"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1100%);}
+	.section input[id="slide13"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1200%);}
+
+
+	/* 좌,우 슬라이드 버튼 */
+.slide-control > div {display:none;}
+.section .left {left:-10px;background:url('./img/left.png') center center / 100% no-repeat; opacity: 0.4;filter: invert(50%);}
+.section .right {right:-10px;background:url('./img/right.png') center center / 100% no-repeat;opacity: 0.4;filter: invert(50%);}
+.section input[id="slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
+.section input[id="slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
+.section input[id="slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
+.section input[id="slide04"]:checked ~ .slidewrap .slide-control > div:nth-child(4) {display:block;}
+.section input[id="slide05"]:checked ~ .slidewrap .slide-control > div:nth-child(5) {display:block;}	
+.section input[id="slide06"]:checked ~ .slidewrap .slide-control > div:nth-child(6) {display:block;}
+.section input[id="slide07"]:checked ~ .slidewrap .slide-control > div:nth-child(7) {display:block;}	
+.section input[id="slide08"]:checked ~ .slidewrap .slide-control > div:nth-child(8) {display:block;}
+.section input[id="slide09"]:checked ~ .slidewrap .slide-control > div:nth-child(9) {display:block;}	
+.section input[id="slide10"]:checked ~ .slidewrap .slide-control > div:nth-child(10) {display:block;}
+.section input[id="slide11"]:checked ~ .slidewrap .slide-control > div:nth-child(11) {display:block;}
+.section input[id="slide12"]:checked ~ .slidewrap .slide-control > div:nth-child(12) {display:block;}
+.section input[id="slide13"]:checked ~ .slidewrap .slide-control > div:nth-child(13) {display:block;}	
+
+	
+	/* 페이징 */
+	.slide-pagelistBG{
+		position: relative;
+		top: 0;
+		left: 0%; 
+		margin: 0;
+		}
+	
+	.slide-pagelist {text-align:center;padding:0px;}
+	
+	.slide-pagelist > li {
+		top: 0px;
+		display:inline-block;
+		vertical-align:middle;
+		transform: translateX(0%);
+		}
+	
+	.slide-pagelist > li > label {
+		border-top: 10px solid white;
+		border-bottom: 10px solid white;
+		font-size: 0px;
+		display:block;
+		padding:1px 15px;
+		font-family: 'Cinzel', serif;
+		font-weight: 900;
+		border-radius: 5px;
+		background: rgba(150,150,150,1);
+		margin:10px -20px;
+		cursor:pointer; 
+		}
+	
+	.slideitem{
+		
+		
+	}
+		
+	
+	.section input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label { background-color: cornflowerblue; padding:3px 10px; border-radius: 2px; font-size: 0px; margin: 0 2px; transform: translateY(0px); border: 0px;}
+	.section input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background-color: cornflowerblue; padding:3px 10px; border-radius: 2px; font-size: 0px; margin: 0 2px; transform: translateY(0px); border: 0px;}
+	.section input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background-color: cornflowerblue; padding:3px 10px; border-radius: 2px; font-size: 0px; margin: 0 2px; transform: translateY(0px); border: 0px;}
+	.section input[id="slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background-color: cornflowerblue; padding:3px 10px; border-radius: 2px; font-size: 0px; margin: 0 2px; transform: translateY(0px); border: 0px;}
+	.section input[id="slide05"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(5) > label {background-color: cornflowerblue; padding:3px 10px; border-radius: 2px; font-size: 0px; margin: 0 2px; transform: translateY(0px); border: 0px;}
+	
+	.section input[id="slide06"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(6) > label {background-color: cornflowerblue; padding:3px 10px; border-radius: 2px; font-size: 0px; margin: 0 2px; transform: translateY(0px); border: 0px;}
+	.section input[id="slide07"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(7) > label {background-color: cornflowerblue; padding:3px 10px; border-radius: 2px; font-size: 0px; margin: 0 2px; transform: translateY(0px); border: 0px;}
+	.section input[id="slide08"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(8) > label {background-color: cornflowerblue; padding:3px 10px; border-radius: 2px; font-size: 0px; margin: 0 2px; transform: translateY(0px); border: 0px;}
+	
+	.section input[id="slide09"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(9) > label {background-color: cornflowerblue; padding:3px 10px; border-radius: 2px; font-size: 0px; margin: 0 2px; transform: translateY(0px); border: 0px;}
+	
+	.section input[id="slide10"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(10) > label {background-color: cornflowerblue; padding:3px 10px; border-radius: 2px; font-size: 0px; margin: 0 2px; transform: translateY(0px); border: 0px;}
+	
+	.section input[id="slide11"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(11) > label {background-color: cornflowerblue; padding:3px 10px; border-radius: 2px; font-size: 0px; margin: 0 2px; transform: translateY(0px); border: 0px;}
+	.section input[id="slide12"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(12) > label {background-color: cornflowerblue; padding:3px 10px; border-radius: 2px; font-size: 0px; margin: 0 2px; transform: translateY(0px); border: 0px;}
+	.section input[id="slide13"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(13) > label {background-color: cornflowerblue; padding:3px 10px; border-radius: 2px; font-size: 0px; margin: 0 2px; transform: translateY(0px); border: 0px;}
+	
+.left:hover {
+    opacity: 1;
+    filter: invert(50%) sepia(14%) saturate(1910%) hue-rotate(185deg) brightness(94%) contrast(90%);
+}
+.right:hover {
+    opacity: 1;
+    filter: invert(50%) sepia(14%) saturate(1910%) hue-rotate(185deg) brightness(94%) contrast(90%);
+}
+	@media (max-width: 500px){
+		.nameBT {position: fixed; z-index: 10; height:15px;  padding: 7px; left: 50%; top: 10px; left: 2vw;}
+		.homeBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 13vw;transform: translateX(-190%);}
+		.workBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 7vw; transform: translateX(-105%);}
+		.cvBT {position: fixed; z-index: 10; height:15px;  padding: 7px; top: 10px; right: 1vw; transform: translateX(0);}
+		p.bignumF{font-family: 'Cinzel', serif;}
+			
+
+</style>
+	
+</head>
+
+<body>
+	<!-- 상단 버튼 -->	
+	<div class="workbody">
+	<div>
+		<a href="index.html">
+		<img src="./img/name.png" class="nameBT" >
+		</a>
+	</div>
+	
+	<div>
+		<a href="index.html">
+		<img src="./img/homeBT.png" class="homeBT">
+		</a>
+	</div>
+	<div>
+		<a href="work.html">
+		<img src="./img/workBT.png" class="workBT">
+		</a>
+	</div>	
+	<div>
+		<a href="cv.html" >
+		<img src="./img/resumeBT.png" class="cvBT">
+		</a>
+	</div>
+			
+		</div>
+	
+	<div class="work">
+
+	<div>
+		<!-- 좌측 글자
+	<div class="lefttext01" style="font-weight: 350;">
+	
+		<h2>01&nbsp;&nbsp;&nbsp;집밖은 위험해&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;전략, 모바일 게임</h2>
+	
+	</div>
+		
+	<div class="lefttext02" style="font-weight: 350;">
+	
+		<h2>01&nbsp;&nbsp;&nbsp;집밖은 위험해&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;PROMONTIONAL VIEDO</h2>
+	
+	</div> 
+		 -->
+		
+		<!-- 이미지 내용 -->
+		<a> <img src="./img/work03/w31.png" style="width: 100%;"> </a>
+			<a> <img src="./img/work03/w32.png" style="width: 100%;"> </a>
+			<div style="max-width: 70%; margin: 0 auto;">
+			
+			</div>
+			
+			<a> <img src="./img/work01/w1block.png" style="width: 100%;"> </a>
+			<a> <img src="./img/work03/w33.png" style="width: 100%;"> </a>
+			<a> <img src="./img/work03/w34.png" style="width: 100%;"> </a>
+			<a> <img src="./img/work03/w35.png" style="width: 100%;"> </a>
+			<a> <img src="./img/work01/w1block.png" style="width: 50%;"> </a>
+			
+		
+		<!--
+		
+		<div class="workbody" style="position: relative; transform: translate(-32%, -130%)">
+		<form>
+
+ 		 <input type="text" id="fname" name="fname" value=" try writing here">
+
+		</form>
+		</div>
+
+-->
+			<!-- 슬라이드 시작   -->
+<div class="section">
+<div class="sectionBG"></div>
+	<input type="radio" name="slide" id="slide01" checked>
+	<input type="radio" name="slide" id="slide02">
+	<input type="radio" name="slide" id="slide03">
+	<input type="radio" name="slide" id="slide04">
+	<input type="radio" name="slide" id="slide05">
+	<input type="radio" name="slide" id="slide06">
+	<input type="radio" name="slide" id="slide07">
+	<input type="radio" name="slide" id="slide08">
+	<input type="radio" name="slide" id="slide09">
+	<input type="radio" name="slide" id="slide10">
+	<input type="radio" name="slide" id="slide11">
+	<input type="radio" name="slide" id="slide12">
+	<input type="radio" name="slide" id="slide13">
+	
+	
+	<li><label for="slide01"></label></li>
+	<li><label for="slide02"></label></li>
+	<li><label for="slide03"></label></li>
+	<li><label for="slide04"></label></li>
+	<li><label for="slide05"></label></li>
+	<li><label for="slide06"></label></li>
+	<li><label for="slide07"></label></li>
+	<li><label for="slide08"></label></li>
+	<li><label for="slide09"></label></li>
+	<li><label for="slide10"></label></li>
+	<li><label for="slide11"></label></li>
+	<li><label for="slide12"></label></li>
+	<li><label for="slide13"></label></li>
+	
+	
+	<div class="slidewrap">
+		
+		<ul class="slidelist">
+			<!-- 슬라이드 영역 -->
+			<li class="slideitem">
+			
+				<a>		
+					<img src="./img/work03/book/자산 1.png" >
+
+				</a>
+			</li>
+			<li class="slideitem">
+				<a>
+					<img src="./img/work03/book/자산 2.png" >
+				</a>
+			</li>
+			<li class="slideitem">
+				<a>
+					
+					<img src="./img/work03/book/자산 3.png" >
+				</a>
+			</li>
+			<li class="slideitem">
+				<a>
+					<img src="./img/work03/book/자산 4.png" >
+				</a>
+			</li>
+			<li class="slideitem">
+				<a>
+					<img src="./img/work03/book/자산 5.png" >
+				</a>
+			</li>
+			<li class="slideitem">
+				<a>
+					<img src="./img/work03/book/자산 6.png" >
+				</a>
+			</li>
+			<li class="slideitem">
+				<a>
+					<img src="./img/work03/book/자산 7.png" >
+				</a>
+			</li>
+			<li class="slideitem">
+				<a>
+					<img src="./img/work03/book/자산 8.png" >
+				</a>
+			</li>
+			<li class="slideitem">
+				<a>
+					<img src="./img/work03/book/자산 9.png" >
+				</a>
+			</li>
+			<li class="slideitem">
+				<a>
+					<img src="./img/work03/book/자산 10.png" >
+				</a>
+			</li>
+			<li class="slideitem">
+				<a>
+					<img src="./img/work03/book/자산 11.png" >
+				</a>
+			</li>
+			<li class="slideitem">
+				<a>
+					<img src="./img/work03/book/자산 12.png" >
+				</a>
+			</li>
+			<li class="slideitem">
+				<a>
+					<img src="./img/work03/book/자산 13.png" >
+				</a>
+			</li>
+			
+			
+			<!-- 좌,우 슬라이드 버튼 -->
+            <div class="slide-control">
+                <div>
+                    <label for="slide13" class="left" onclick="colorChangeFour()"></label>
+                    <label for="slide02" class="right" onclick="colorChangeTwo()"></label>
+                </div>
+                <div>
+                    <label for="slide01" class="left" onclick="colorChangeOne()"></label>
+                    <label for="slide03" class="right" onclick="colorChangeThree()"></label>
+                </div>
+                <div>
+                    <label for="slide02" class="left" onclick="colorChangeTwo()"></label>
+                    <label for="slide04" class="right" onclick="colorChangeFour()"></label>
+                </div>
+				<div>
+                    <label for="slide03" class="left" onclick="colorChangeThree()"></label>
+                    <label for="slide05" class="right" onclick="colorChangeOne()"></label>
+                </div>
+				<div>
+                    <label for="slide04" class="left" onclick="colorChangeThree()"></label>
+                    <label for="slide06" class="right" onclick="colorChangeOne()"></label>
+                </div>
+				<div>
+                    <label for="slide05" class="left" onclick="colorChangeThree()"></label>
+                    <label for="slide07" class="right" onclick="colorChangeOne()"></label>
+                </div>
+				<div>
+                    <label for="slide06" class="left" onclick="colorChangeThree()"></label>
+                    <label for="slide08" class="right" onclick="colorChangeOne()"></label>
+                </div>
+				<div>
+                    <label for="slide07" class="left" onclick="colorChangeThree()"></label>
+                    <label for="slide09" class="right" onclick="colorChangeOne()"></label>
+                </div>
+				<div>
+                    <label for="slide08" class="left" onclick="colorChangeThree()"></label>
+                    <label for="slide10" class="right" onclick="colorChangeOne()"></label>
+                </div>
+				<div>
+                    <label for="slide09" class="left" onclick="colorChangeThree()"></label>
+                    <label for="slide11" class="right" onclick="colorChangeOne()"></label>
+                </div>
+				<div>
+                    <label for="slide10" class="left" onclick="colorChangeThree()"></label>
+                    <label for="slide12" class="right" onclick="colorChangeOne()"></label>
+                </div>
+				<div>
+                    <label for="slide11" class="left" onclick="colorChangeThree()"></label>
+                    <label for="slide13" class="right" onclick="colorChangeOne()"></label>
+                </div>
+				<div>
+                    <label for="slide12" class="left" onclick="colorChangeThree()"></label>
+                    <label for="slide01" class="right" onclick="colorChangeOne()"></label>
+                </div>
+				
+			
+            </div>
+
+		</ul>
+		<!-- 페이징 -->
+		<div class="slide-pagelistBG">
+		
+		<ul class="slide-pagelist">
+			
+			<li><label for="slide01" onclick="colorChangeOne()">01</label></li>
+            <li><label for="slide02" onclick="colorChangeTwo()">02</label></li>
+            <li><label for="slide03" onclick="colorChangeThree()">03</label></li>
+			<li><label for="slide04" onclick="colorChangeFour()">04</label></li>
+			<li><label for="slide05" onclick="colorChangeFour()">05</label></li>
+			<li><label for="slide06" onclick="colorChangeFour()">06</label></li>
+			<li><label for="slide07" onclick="colorChangeFour()">07</label></li>
+			<li><label for="slide08" onclick="colorChangeFour()">08</label></li>
+			<li><label for="slide09" onclick="colorChangeFour()">09</label></li>
+			<li><label for="slide10" onclick="colorChangeFour()">10</label></li>
+			<li><label for="slide11" onclick="colorChangeFour()">11</label></li>
+			<li><label for="slide12" onclick="colorChangeFour()">12</label></li>
+			<li><label for="slide13" onclick="colorChangeFour()">13</label></li>
+			
+			
+		</ul>
+		</div>
+		
+	  </div>
+		  </div>
+		
+		<!--///////////////////////////////-->
+		<a> <img src="./img/work03/w32.1.png" style="width: 100%; filter: invert(100)"> </a>
+		<img src="./img/work01/w1e.png" style="width: 100%;">
+		
+</div>
+</div>
+</body>
+</html>
